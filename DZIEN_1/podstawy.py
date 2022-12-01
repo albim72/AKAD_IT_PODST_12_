@@ -39,4 +39,18 @@ ten komentarz nie jest dokumentacyjny
 #wyświetlanie tekstu za poocą kolekcji
 print(pora,pora1,",",pora,pora2,"rok:",rok,sep=" -- ")
 
+abc= 56,89
+print(abc)
+
+y = 77.895
+print(y)
+print(8*y)
+
+x = "8.15"
+print(12*x)
+print(12*float(x))
+#CTRL+D -> powielenie linii/bloku
+print(12*eval(x))
+
+
 
