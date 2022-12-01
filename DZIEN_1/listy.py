@@ -40,3 +40,30 @@ print(sklepzoo[0])
 print(sklepzoo[0][0])
 print(sklepzoo[0][0][0],"-",sklepzoo[1][0][0],"zł")
 print(sklepzoo[0][1],"-",sklepzoo[1][1],"zł")
+
+rasa_owczarki = ["owczarek szkocki","owczarek niemiecki","owczarek podhalański"]
+rasa = rasa + rasa_owczarki
+print(rasa)
+
+litery = ['a','b','c','d','e','f','g','h']
+print("przed zmianą:",litery)
+litery[2:7] = [99,12,33]
+print("po zmianie:",litery)
+
+litery_m = litery
+print(type(litery_m))
+
+litery_p = list(litery) #stworzenie nowej listy
+litery_q = litery[:]#stworzenie nowej listy
+
+print("przed zmianą:",litery)
+print("przed zmianą:",litery_m)
+print("przed zmianą:",litery_p)
+print("przed zmianą:",litery_q)
+
+litery[:] = ['abc','xyz',1001,1002,1134,2002]
+
+print("po zmianie:",litery)
+print("po zmianie:",litery_m)
+print("po zmianie:",litery_p)
+print("po zmianie:",litery_q)
