@@ -68,5 +68,16 @@ i = 4
 i+=1 # i = i+1
 print(i)
 
+sl = "lajkonik"
+print(sl)
+print(sl[0])
+print(sl[1])
+print(sl[2:5]) #lewa granica przedziałów zawiera się a prawa nie
+print(sl[:4])
+print(sl[3:])
+print(sl[-1])
+print(sl[-2])
+
+
 
 
