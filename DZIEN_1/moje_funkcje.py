@@ -29,3 +29,15 @@ def oblicz(a,b,x):
 
 print(oblicz(6,12,36))
 print(f)
+
+#przykład nr 4
+
+def miasta(miasto3, miasto2="Katowice", miasto1="Kraków"):
+    print("miasto tygodnia:",miasto1,", drugie miejsce:", miasto2, ",trzecie miejsce:",miasto3)
+
+
+miasta("Toruń","Poznań","Białystok")
+miasta("Toruń","Poznań")
+miasta("Toruń")
+miasta("Rzeszów",None,"Lublin")
+miasta("Rzeszów",miasto1="Lublin")
