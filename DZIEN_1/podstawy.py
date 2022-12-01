@@ -52,5 +52,21 @@ print(12*float(x))
 #CTRL+D -> powielenie linii/bloku
 print(12*eval(x))
 
+g1 = 10
+g2 = 11
+
+print(g1+g2,g1-g2,g1*g2,g1/g2,g1%g2,g1**g2,sep="  --  ")
+print(round(6.77))
+print(round(6.77,1))
+print(pow(7,4))
+
+import math
+
+print(math.sqrt(17))
+
+i = 4
+i+=1 # i = i+1
+print(i)
+
 
 
