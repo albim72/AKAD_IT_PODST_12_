@@ -11,11 +11,11 @@ witaj()
 #     witaj()
 
 #przykład nr 2
-def obywatel(kraj="Polska"):
-    print("pochodzę z kraju:",kraj)
+def obywatel(nrtelefonu,kraj="Polska"):
+    print("pochodzę z kraju:",kraj,", numer telefonu: ",nrtelefonu)
 
-obywatel("Turcja")
-obywatel("Armenia")
-obywatel("Włochy")
-obywatel("Hiszpania")
-obywatel()
+obywatel(345435343,"Turcja")
+obywatel(345434665,"Armenia")
+obywatel(556456456546,"Włochy")
+obywatel(54546546456,"Hiszpania")
+obywatel(78678578768)
