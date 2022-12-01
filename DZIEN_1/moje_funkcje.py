@@ -19,3 +19,13 @@ obywatel(345434665,"Armenia")
 obywatel(556456456546,"Włochy")
 obywatel(54546546456,"Hiszpania")
 obywatel(78678578768)
+#przykład nr 3
+f= 9
+def oblicz(a,b,x):
+    f = (a+b)*x
+    print("za chwilę będzie return")
+    return f
+    print("po returnie")
+
+print(oblicz(6,12,36))
+print(f)
