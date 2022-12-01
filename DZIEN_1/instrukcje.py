@@ -13,7 +13,7 @@ else:
     print("a jest mniejsze od b")
 
 print("_________________match case /od wersji 3.10______________________")
-nr_dnia = int(input("podaj numer dnia tygodnia (1-7): "))
+nr_dnia = 3
 
 match nr_dnia:
     case 1:
@@ -34,7 +34,7 @@ match nr_dnia:
         print("Nie ma takiego dnia")
 
 print("________wyjście________")
-quit_flag = True
+quit_flag = False
 match quit_flag:
     case True:
         print("Wyjście...")
@@ -42,3 +42,26 @@ match quit_flag:
     case False:
         print("system pracuje")
 
+print("_________instrukcje iteracyjne_______________")
+
+i=1
+while i<6:
+    print(i)
+    if i==3:
+        break
+    i+=1
+else:
+    print("ostateczna wersja i =",i)
+
+
+print("__________________________________________________")
+
+owoce = ["jabłko","kiwi","banan","malina","cytryna"]
+for owoc in owoce:
+    print(owoc)
+
+cechy =["1kg","200g","20kg","1t"]
+
+for owoc in owoce:
+    for waga in cechy:
+        print(owoc,waga)
