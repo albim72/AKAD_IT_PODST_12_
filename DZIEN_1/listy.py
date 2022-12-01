@@ -67,3 +67,19 @@ print("po zmianie:",litery)
 print("po zmianie:",litery_m)
 print("po zmianie:",litery_p)
 print("po zmianie:",litery_q)
+
+marki = ["audi","toyota","opel","peugeot","kia","bmw","landrover"]
+parz = marki[::2]
+nieparz = marki[1::2]
+
+takietam = marki[1:5:2] #[od:do:krok]
+
+print(takietam)
+
+print(parz)
+print(nieparz)
+
+imie= "Hieronim" #odwróć listy w szyku
+
+print(imie,"-",imie[::-1])
+
