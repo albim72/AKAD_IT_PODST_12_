@@ -108,19 +108,15 @@ st2.print_pracownik()
 print(f"wiek osoby za {za} lat: {st2.wiekza_x_lat(za)} ")
 print(f"czy osoba jest pracownikiem? ({st2.czypracownik()})")
 
+#utwórz trzecią instancję klasy Student - st3, który to student nie będzie pracownikiem, ale będzie sportowcem
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("____________student 3_____________")
+st3 = Student("Paweł",22,77,177,4545545,"Automatyka i Informatyka","informatyka",3,dyscyplina="biegi ultra",lataupr=4,
+              zyciowka="50km 7h 34min 4s")
+st3.print_osoba()
+st3.print_student()
+st3.info_sport()
+print(f"wiek osoby za {za} lat: {st3.wiekza_x_lat(za)} ")
+print(f"czy osoba jest pracownikiem? ({st3.czypracownik()})")
 
 
