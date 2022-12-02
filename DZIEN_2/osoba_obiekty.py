@@ -66,18 +66,42 @@ class Sport:
         self.dyscyplina = dyscyplina
         self.lataupr = lataupr
         self.zyciowka = zyciowka
-        
+
     def info_sport(self):
         print(f"{self.dyscyplina}, lata uprawiania: {self.lataupr}, życiówka: {self.zyciowka}.")
-        
-        
+
+
 class Ekstra:
     pass
 
 
+class Student(Pracownik,Sport,Ekstra):
+    def __init__(self,imie,wiek,waga,wzrost,nr_studenta,wydzial,kierunek,rokstud,
+                 firma="",stanowisko="",latapracy="",wynagrodzenie="",dyscyplina="",lataupr="",zyciowka=""):
+        Pracownik.__init__(self,imie,wiek,waga,wzrost,firma,stanowisko,latapracy,wynagrodzenie)
+        Sport.__init__(self,dyscyplina,lataupr,zyciowka)
+        self.nr_studenta = nr_studenta
+        self.wydzial = wydzial
+        self.kierunek = kierunek
+        self.rokstud = rokstud
+        
+    def print_student(self):
+        print(f"Student {self.nr_studenta}, wydział: {self.wydzial}, kierunek: {self.kierunek}, "
+              f"rok studiów: {self.rokstud}.")
+
+    def czypracownik(self):
+        return self.firma != ""
+        
+    
+    
+    
         
         
         
+        
+        
+
+
 
 
 
