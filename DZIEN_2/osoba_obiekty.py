@@ -8,6 +8,7 @@ class Osoba:
         self.pracownik = False
         self.info()
 
+
     def info(self):
         print("utworzono nową osobę...")
 
@@ -36,3 +37,49 @@ os2 = Osoba("Olga",29,53,166)
 os2.print_osoba()
 print(f"wiek osoby za {za} lat: {os2.wiekza_x_lat(za)} ")
 print(f"czy osoba jest pracownikiem? ({os2.czypracownik()})")
+
+
+class Pracownik(Osoba):
+    #konstruktor z dziedziczeniem
+    def __init__(self,imie,wiek,waga,wzrost,firma,stanowisko,latapracy,wynagrodzenie):
+        super().__init__(imie,wiek,waga,wzrost)
+        self.firma = firma
+        self.stanowisko = stanowisko
+        self.latapracy = latapracy
+        self.wynagrodzenie = wynagrodzenie
+        self.pracownik = True
+
+    def print_pracownik(self):
+        print(f"dane pracownika -> firma: {self.firma}, stanowisko pracy: {self.stanowisko}, "
+              f"lata pracy: {self.latapracy}, wynagrodzenie: {self.wynagrodzenie} zł.")
+
+
+print("____________pracownik 1_____________")
+pr1 = Pracownik("Karol",55,101,174,"ABC","dyrektor",12,11900)
+pr1.print_osoba()
+pr1.print_pracownik()
+print(f"wiek osoby za {za} lat: {pr1.wiekza_x_lat(za)} ")
+print(f"czy osoba jest pracownikiem? ({pr1.czypracownik()})")
+
+class Sport:
+    def __init__(self,dyscyplina,lataupr,zyciowka):
+        self.dyscyplina = dyscyplina
+        self.lataupr = lataupr
+        self.zyciowka = zyciowka
+        
+    def info_sport(self):
+        print(f"{self.dyscyplina}, lata uprawiania: {self.lataupr}, życiówka: {self.zyciowka}.")
+        
+        
+class Ekstra:
+    pass
+
+
+        
+        
+        
+
+
+
+
+
