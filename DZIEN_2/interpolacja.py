@@ -27,3 +27,18 @@ owoce = [
     ('malina',16),
     ('banan',4.99)
 ]
+
+
+enumeracja = list(enumerate(owoce))
+print(enumeracja)
+print("__________warzywniak JÓZEK - cennik owoców______________________")
+for i,(owoc,cena) in enumerate(owoce):
+    print('#%d: %-10s = %.2f zł' %(i,owoc,cena))
+
+print("______warzywniak JÓZEK - cennik owoców - wersja rozszerzona_________")
+for i,(owoc,cena) in enumerate(owoce):
+    print('#%d: %-10s = %6.2f zł' %(
+        i+1,
+        owoc.title(),
+        round(cena,1)
+    ))
