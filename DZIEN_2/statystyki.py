@@ -5,12 +5,14 @@ def statystyki(dane):
     maksimum = max(dane)
     rozstep = maksimum-minimum
     n = len(dane)
-    return minimum,maksimum,rozstep,n
+    suma = sum(dane)
+    avg = suma/n
+    return minimum,maksimum,rozstep,n,suma,avg
 
 wynik = statystyki(liczby)
 print(wynik)
 print(type(wynik))
 
-mini,maxi,roz,n = statystyki(liczby)
+mini,maxi,roz,n,s,a = statystyki(liczby)
 print(f"wartość maksymalna: {maxi}, wartość minimalna: {mini}, liczba elementów: {n}, "
-      f"rozstęp danych: {roz}")
+      f"rozstęp danych: {roz}, suma elementów: {s}, średnia arytmetyczna: {a:.2f}")
