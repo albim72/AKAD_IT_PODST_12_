@@ -19,10 +19,14 @@ class Book:
     def rabat(self):
         return 0.1*self.cena
 
+    def setcena(self,nowacena):
+        self.cena = nowacena
+
 
 print("________książka nr 1__________")
 b1 = Book(456,"Wiedźmin","Andrzej Sapkowski",39)
 b1.oprawa = "twarda"
+b1.setcena(45)
 b1.print_book()
 print(f"cena po rabacie {b1.cena - b1.rabat()} zł")
 
