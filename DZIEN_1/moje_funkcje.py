@@ -21,6 +21,7 @@ obywatel(54546546456,"Hiszpania")
 obywatel(78678578768)
 #przykład nr 3
 f= 9
+
 def oblicz(a,b,x):
     f = (a+b)*x
     print("za chwilę będzie return")
@@ -41,3 +42,22 @@ miasta("Toruń","Poznań")
 miasta("Toruń")
 miasta("Rzeszów",None,"Lublin")
 miasta("Rzeszów",miasto1="Lublin")
+
+#przykład nr 5
+
+def zamki(nr_tygodnia,*zamki,kupon):
+    print("zamek tygodnia:", zamki[0]," - kupon do biletu:",kupon,"zł, drugie miejsce:", zamki[1], ",trzecie miejsce:", zamki[2])
+
+zamki(12,"Malbork","Ogrodzieniec","Warszawa","Czersk",kupon=20)
+zamki(13,"Janowiec","Malbork","Ogrodzieniec","Będzin","Warszawa","Czersk",kupon=6)
+
+
+#przykład nr 6
+ef=100
+def fx(x):
+    global ef
+    ef = ef*x**2
+    return ef
+
+print(fx(9))
+print(ef)
