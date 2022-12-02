@@ -5,3 +5,10 @@ def kwota(t,nw,w,u,i,rab=0):
 
 print(kwota(100,100,50,50,50),"zł")
 print(kwota(100,100,50,50,50,25),"zł")
+
+#dla rabatu 0 wypisz -> kwota bazowa wynosi: kwota
+#dla rabatów pozostałych -> dla rabatu x% kwota do zapłaty wynosi: kwota
+
+rabs = [0,8,10,12,15,20,25]
+
+#dodatkowo: zapisz kwoty które policzyliśmy dla każdego rabatu do listy wynik =[]
