@@ -84,22 +84,39 @@ class Student(Pracownik,Sport,Ekstra):
         self.wydzial = wydzial
         self.kierunek = kierunek
         self.rokstud = rokstud
-        
+
     def print_student(self):
         print(f"Student {self.nr_studenta}, wydział: {self.wydzial}, kierunek: {self.kierunek}, "
               f"rok studiów: {self.rokstud}.")
 
     def czypracownik(self):
         return self.firma != ""
-        
-    
-    
-    
-        
-        
-        
-        
-        
+
+
+print("____________student 1_____________")
+st1 = Student("Olaf",22,80,176,456556,"budowlany","budowa mostów",3)
+st1.print_osoba()
+st1.print_student()
+print(f"wiek osoby za {za} lat: {st1.wiekza_x_lat(za)} ")
+print(f"czy osoba jest pracownikiem? ({st1.czypracownik()})")
+
+print("____________student 2_____________")
+st2 = Student("Karolina",23,60,178,976766,"ekonomii","ekonomika",4,"XYZ","sekretarka",1,2700)
+st2.print_osoba()
+st2.print_student()
+st2.print_pracownik()
+print(f"wiek osoby za {za} lat: {st2.wiekza_x_lat(za)} ")
+print(f"czy osoba jest pracownikiem? ({st2.czypracownik()})")
+
+
+
+
+
+
+
+
+
+
 
 
 
