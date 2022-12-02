@@ -22,6 +22,19 @@ class Osoba:
     def czypracownik(self):
         return self.pracownik
 
+    def bmi(self):
+        return self.waga/(self.wzrost/100)**2
+
+    def opis_bmi(self):
+        if self.bmi()<18.5:
+            return "niedowaga"
+        elif self.bmi()<=25:
+            return "waga prawidłowa"
+        elif self.bmi()<=30:
+            return "nadwaga"
+        else:
+            return "otyłość"
+
 
 za = 7
 print("____________osoba 1_____________")
@@ -30,6 +43,7 @@ os1.kolor_oczu = "niebieskie"
 os1.print_osoba()
 print(f"wiek osoby za {za} lat: {os1.wiekza_x_lat(za)} ")
 print(f"czy osoba jest pracownikiem? ({os1.czypracownik()})")
+print(f"bmi ciała wynosi: {os1.bmi():.2f}, opis: {os1.opis_bmi()}")
 
 
 print("____________osoba 2_____________")
@@ -60,6 +74,7 @@ pr1.print_osoba()
 pr1.print_pracownik()
 print(f"wiek osoby za {za} lat: {pr1.wiekza_x_lat(za)} ")
 print(f"czy osoba jest pracownikiem? ({pr1.czypracownik()})")
+print(f"bmi ciała wynosi: {pr1.bmi():.2f}, opis: {pr1.opis_bmi()}")
 
 class Sport:
     def __init__(self,dyscyplina,lataupr,zyciowka):
@@ -118,5 +133,7 @@ st3.print_student()
 st3.info_sport()
 print(f"wiek osoby za {za} lat: {st3.wiekza_x_lat(za)} ")
 print(f"czy osoba jest pracownikiem? ({st3.czypracownik()})")
+print(f"bmi ciała wynosi: {st3.bmi():.2f}, opis: {st3.opis_bmi()}")
+
 
 
